@@ -1,0 +1,6 @@
+framework module YZBase {
+  umbrella header "YZBase.h"
+
+  export *
+  module * { export * }
+}

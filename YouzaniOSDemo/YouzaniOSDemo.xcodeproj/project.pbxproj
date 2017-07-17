@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		721F57011AF0A2A8009F5766 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 721F57001AF0A2A8009F5766 /* AppDelegate.m */; };
+		8557DEE91E9F4DF5008616A0 /* libUnsuggest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8557DEE71E9F4DF5008616A0 /* libUnsuggest.a */; };
+		8557DEEB1E9F4E00008616A0 /* YZBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8557DEEA1E9F4E00008616A0 /* YZBase.framework */; };
+		A9DB0B771F18C54600411B73 /* AYWKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DB0B721F18C54600411B73 /* AYWKWebView.m */; };
+		A9DB0B781F18C54600411B73 /* YZSDK+AllWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DB0B741F18C54600411B73 /* YZSDK+AllWebView.m */; };
+		A9DB0B791F18C54600411B73 /* YZWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DB0B761F18C54600411B73 /* YZWebViewController.m */; };
+		EF401C5D1CE3368E000B0A16 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF401C591CE3368E000B0A16 /* Images.xcassets */; };
+		EF401C5F1CE3368E000B0A16 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF401C5B1CE3368E000B0A16 /* LaunchScreen.xib */; };
+		EF401C601CE3368E000B0A16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF401C5C1CE3368E000B0A16 /* main.m */; };
+		EF91BB541CE324110088E0D3 /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = EF91BB4F1CE324110088E0D3 /* UIViewController+BackButtonHandler.m */; };
+		EF91BB7E1CE32F940088E0D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF91BB721CE32F940088E0D3 /* Main.storyboard */; };
+		EF9D46371DAF8AFD007F3EFC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9D46361DAF8AFD007F3EFC /* ViewController.m */; };
+		EF9D46401DAF9A01007F3EFC /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9D463F1DAF9A01007F3EFC /* WebViewController.m */; };
+		EF9D46431DAF9A0D007F3EFC /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9D46421DAF9A0D007F3EFC /* LoginViewController.m */; };
+		EF9D46461DAF9B00007F3EFC /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9D46451DAF9B00007F3EFC /* UserModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		721F56F81AF0A2A8009F5766 /* YouzanIOSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouzanIOSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		721F56FF1AF0A2A8009F5766 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		721F57001AF0A2A8009F5766 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8557DEE71E9F4DF5008616A0 /* libUnsuggest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libUnsuggest.a; path = ../../../LoginMethod/libUnsuggest.a; sourceTree = "<group>"; };
+		8557DEE81E9F4DF5008616A0 /* UnsuggestMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UnsuggestMethod.h; path = ../../../LoginMethod/UnsuggestMethod.h; sourceTree = "<group>"; };
+		8557DEEA1E9F4E00008616A0 /* YZBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YZBase.framework; path = ../../../SDK/YZBase.framework; sourceTree = "<group>"; };
+		A9DB0B711F18C54600411B73 /* AYWKWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYWKWebView.h; sourceTree = "<group>"; };
+		A9DB0B721F18C54600411B73 /* AYWKWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYWKWebView.m; sourceTree = "<group>"; };
+		A9DB0B731F18C54600411B73 /* YZSDK+AllWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YZSDK+AllWebView.h"; sourceTree = "<group>"; };
+		A9DB0B741F18C54600411B73 /* YZSDK+AllWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YZSDK+AllWebView.m"; sourceTree = "<group>"; };
+		A9DB0B751F18C54600411B73 /* YZWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZWebViewController.h; sourceTree = "<group>"; };
+		A9DB0B761F18C54600411B73 /* YZWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZWebViewController.m; sourceTree = "<group>"; };
+		EF401C591CE3368E000B0A16 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EF401C5A1CE3368E000B0A16 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF401C5B1CE3368E000B0A16 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		EF401C5C1CE3368E000B0A16 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF91BB4E1CE324110088E0D3 /* UIViewController+BackButtonHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BackButtonHandler.h"; sourceTree = "<group>"; };
+		EF91BB4F1CE324110088E0D3 /* UIViewController+BackButtonHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BackButtonHandler.m"; sourceTree = "<group>"; };
+		EF91BB721CE32F940088E0D3 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		EF9D46351DAF8AFD007F3EFC /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EF9D46361DAF8AFD007F3EFC /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EF9D463E1DAF9A01007F3EFC /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		EF9D463F1DAF9A01007F3EFC /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		EF9D46411DAF9A0D007F3EFC /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		EF9D46421DAF9A0D007F3EFC /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		EF9D46441DAF9B00007F3EFC /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserModel.h; path = UserModels/UserModel.h; sourceTree = "<group>"; };
+		EF9D46451DAF9B00007F3EFC /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserModel.m; path = UserModels/UserModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		721F56F51AF0A2A8009F5766 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8557DEE91E9F4DF5008616A0 /* libUnsuggest.a in Frameworks */,
+				8557DEEB1E9F4E00008616A0 /* YZBase.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		721F56EF1AF0A2A8009F5766 = {
+			isa = PBXGroup;
+			children = (
+				721F56FA1AF0A2A8009F5766 /* YouzanIOSDemo */,
+				721F56F91AF0A2A8009F5766 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		721F56F91AF0A2A8009F5766 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				721F56F81AF0A2A8009F5766 /* YouzanIOSDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		721F56FA1AF0A2A8009F5766 /* YouzanIOSDemo */ = {
+			isa = PBXGroup;
+			children = (
+				EF91BB4C1CE324110088E0D3 /* Universal */,
+				EF91BB561CE32F940088E0D3 /* Features */,
+				721F56FF1AF0A2A8009F5766 /* AppDelegate.h */,
+				721F57001AF0A2A8009F5766 /* AppDelegate.m */,
+				EF401C581CE3368E000B0A16 /* Supporting Files */,
+			);
+			path = YouzanIOSDemo;
+			sourceTree = "<group>";
+		};
+		A9DB0B701F18C52500411B73 /* WKWebView */ = {
+			isa = PBXGroup;
+			children = (
+				A9DB0B711F18C54600411B73 /* AYWKWebView.h */,
+				A9DB0B721F18C54600411B73 /* AYWKWebView.m */,
+				A9DB0B731F18C54600411B73 /* YZSDK+AllWebView.h */,
+				A9DB0B741F18C54600411B73 /* YZSDK+AllWebView.m */,
+				A9DB0B751F18C54600411B73 /* YZWebViewController.h */,
+				A9DB0B761F18C54600411B73 /* YZWebViewController.m */,
+			);
+			path = WKWebView;
+			sourceTree = "<group>";
+		};
+		EF401C581CE3368E000B0A16 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF401C591CE3368E000B0A16 /* Images.xcassets */,
+				EF401C5A1CE3368E000B0A16 /* Info.plist */,
+				EF401C5B1CE3368E000B0A16 /* LaunchScreen.xib */,
+				EF401C5C1CE3368E000B0A16 /* main.m */,
+			);
+			name = "Supporting Files";
+			path = "YouzaniOSDemo/Supporting Files";
+			sourceTree = SOURCE_ROOT;
+		};
+		EF91BB4C1CE324110088E0D3 /* Universal */ = {
+			isa = PBXGroup;
+			children = (
+				8557DEEA1E9F4E00008616A0 /* YZBase.framework */,
+				EFAA13E01E82204F00BCBD59 /* libUnsuggest */,
+				EF91BB4D1CE324110088E0D3 /* Categoary */,
+			);
+			name = Universal;
+			path = YouzaniOSDemo/Universal;
+			sourceTree = SOURCE_ROOT;
+		};
+		EF91BB4D1CE324110088E0D3 /* Categoary */ = {
+			isa = PBXGroup;
+			children = (
+				EF91BB4E1CE324110088E0D3 /* UIViewController+BackButtonHandler.h */,
+				EF91BB4F1CE324110088E0D3 /* UIViewController+BackButtonHandler.m */,
+			);
+			path = Categoary;
+			sourceTree = "<group>";
+		};
+		EF91BB561CE32F940088E0D3 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				A9DB0B701F18C52500411B73 /* WKWebView */,
+				EF91BB6D1CE32F940088E0D3 /* Views */,
+				EF91BB571CE32F940088E0D3 /* Models */,
+				EF91BB621CE32F940088E0D3 /* ViewControllers */,
+			);
+			name = Features;
+			path = YouzaniOSDemo/Features;
+			sourceTree = SOURCE_ROOT;
+		};
+		EF91BB571CE32F940088E0D3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EF9D46441DAF9B00007F3EFC /* UserModel.h */,
+				EF9D46451DAF9B00007F3EFC /* UserModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EF91BB621CE32F940088E0D3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EF9D46351DAF8AFD007F3EFC /* ViewController.h */,
+				EF9D46361DAF8AFD007F3EFC /* ViewController.m */,
+				EF9D463E1DAF9A01007F3EFC /* WebViewController.h */,
+				EF9D463F1DAF9A01007F3EFC /* WebViewController.m */,
+				EF9D46411DAF9A0D007F3EFC /* LoginViewController.h */,
+				EF9D46421DAF9A0D007F3EFC /* LoginViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EF91BB6D1CE32F940088E0D3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF91BB721CE32F940088E0D3 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EFAA13E01E82204F00BCBD59 /* libUnsuggest */ = {
+			isa = PBXGroup;
+			children = (
+				8557DEE71E9F4DF5008616A0 /* libUnsuggest.a */,
+				8557DEE81E9F4DF5008616A0 /* UnsuggestMethod.h */,
+			);
+			name = libUnsuggest;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		721F56F71AF0A2A8009F5766 /* YouzanIOSDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 721F571B1AF0A2A8009F5766 /* Build configuration list for PBXNativeTarget "YouzanIOSDemo" */;
+			buildPhases = (
+				721F56F41AF0A2A8009F5766 /* Sources */,
+				721F56F51AF0A2A8009F5766 /* Frameworks */,
+				721F56F61AF0A2A8009F5766 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YouzanIOSDemo;
+			productName = YouzanIOSDemo;
+			productReference = 721F56F81AF0A2A8009F5766 /* YouzanIOSDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		721F56F01AF0A2A8009F5766 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "张伟";
+				TargetAttributes = {
+					721F56F71AF0A2A8009F5766 = {
+						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 5ATRCX89M9;
+					};
+				};
+			};
+			buildConfigurationList = 721F56F31AF0A2A8009F5766 /* Build configuration list for PBXProject "YouzaniOSDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 721F56EF1AF0A2A8009F5766;
+			productRefGroup = 721F56F91AF0A2A8009F5766 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				721F56F71AF0A2A8009F5766 /* YouzanIOSDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		721F56F61AF0A2A8009F5766 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF401C5F1CE3368E000B0A16 /* LaunchScreen.xib in Resources */,
+				EF401C5D1CE3368E000B0A16 /* Images.xcassets in Resources */,
+				EF91BB7E1CE32F940088E0D3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		721F56F41AF0A2A8009F5766 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				721F57011AF0A2A8009F5766 /* AppDelegate.m in Sources */,
+				EF9D46401DAF9A01007F3EFC /* WebViewController.m in Sources */,
+				EF9D46371DAF8AFD007F3EFC /* ViewController.m in Sources */,
+				A9DB0B781F18C54600411B73 /* YZSDK+AllWebView.m in Sources */,
+				EF91BB541CE324110088E0D3 /* UIViewController+BackButtonHandler.m in Sources */,
+				EF9D46431DAF9A0D007F3EFC /* LoginViewController.m in Sources */,
+				A9DB0B771F18C54600411B73 /* AYWKWebView.m in Sources */,
+				EF9D46461DAF9B00007F3EFC /* UserModel.m in Sources */,
+				A9DB0B791F18C54600411B73 /* YZWebViewController.m in Sources */,
+				EF401C601CE3368E000B0A16 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		721F57191AF0A2A8009F5766 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		721F571A1AF0A2A8009F5766 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		721F571C1AF0A2A8009F5766 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5ATRCX89M9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../SDK\"",
+				);
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "YouzanIOSDemo/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../LoginMethod\"",
+				);
+				New_Setting = "";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ppsports.youzan.h5SDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		721F571D1AF0A2A8009F5766 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5ATRCX89M9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../SDK\"",
+				);
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "YouzanIOSDemo/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../LoginMethod\"",
+				);
+				New_Setting = "";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ppsports.youzan.h5SDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		721F56F31AF0A2A8009F5766 /* Build configuration list for PBXProject "YouzaniOSDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				721F57191AF0A2A8009F5766 /* Debug */,
+				721F571A1AF0A2A8009F5766 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		721F571B1AF0A2A8009F5766 /* Build configuration list for PBXNativeTarget "YouzanIOSDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				721F571C1AF0A2A8009F5766 /* Debug */,
+				721F571D1AF0A2A8009F5766 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 721F56F01AF0A2A8009F5766 /* Project object */;
+}
