@@ -3,7 +3,7 @@
 //  UPBOX
 //
 //  Created by YLCHUN on 2017/7/4.
-//  Copyright © 2017年 PPSPORTS Cultural Development Co., Ltd. All rights reserved.
+//  Copyright © 2017年 ylchun Cultural Development Co., Ltd. All rights reserved.
 //
 
 #import "YZWebViewController.h"

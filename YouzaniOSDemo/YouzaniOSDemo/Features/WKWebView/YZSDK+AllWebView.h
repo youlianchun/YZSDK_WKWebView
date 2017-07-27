@@ -3,7 +3,7 @@
 //  YouzaniOSDemo
 //
 //  Created by YLCHUN on 2017/7/14.
-//  Copyright © 2017年 张伟. All rights reserved.
+//  Copyright © 2017年 ylchun. All rights reserved.
 //
 
 #import <YZBase/YZBase.h>
