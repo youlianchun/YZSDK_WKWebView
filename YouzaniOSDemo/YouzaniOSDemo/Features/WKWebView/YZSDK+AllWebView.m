@@ -154,7 +154,7 @@ static void cleYZCookie() {
     NSString *url = URL.absoluteString;
     if ([url containsString:@"alipay://"]) {
         id webView = self.webView;
-        if ([webView isKindOfClass:[WKWebView class]]) {
+        if ([webView isKindOfClass:[WKWebView class]] && [[UIApplication sharedApplication] canOpenURL:URL]) {
             url = [url stringByRemovingPercentEncoding];
             NSInteger subIndex = 23;
             NSString* dataStr=[url substringFromIndex:subIndex];
@@ -162,7 +162,8 @@ static void cleYZCookie() {
             NSMutableString* mString = [[NSMutableString alloc] init];
             [mString appendString:[url substringToIndex:subIndex]];
             [mString appendString:encodeString];
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:mString]];
+            NSURL *openUrl = [NSURL URLWithString:mString];
+            [[UIApplication sharedApplication] openURL:openUrl];
             yzNotice.notice = IsYouzanNotice;
         }
     }
