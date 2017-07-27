@@ -106,8 +106,24 @@ static void cleYZCookie() {
 
 @end
 
+
 @implementation YZSDK (AllWebView)
 
++(id)webView {
+    id webView = objc_getAssociatedObject(self, sel_registerName("_kWebView"));
+    return webView;
+}
++(void)setWebView:(id)webView {
+    objc_setAssociatedObject(self, sel_registerName("_kWebView"), webView, OBJC_ASSOCIATION_ASSIGN);
+}
+
++(void)load {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        Class class = object_getClass(self);
+        yz_replaceMethod(class.class, @selector(noticeFromYouzanWithUrl:), @selector(yz_noticeFromYouzanWithUrl:));
+    });
+}
 + (WKWebView*)wkWebViewWithWKClass:(WKWebViewClass)wkCls configuration:(WKWebViewConfiguration*)configuration {
     Class cls = [WKWebView class];
     if (wkCls == NULL) {
@@ -126,10 +142,31 @@ static void cleYZCookie() {
 
 + (void)initYouzanWithWebView:(id)webView {
     [self initYouzanWithUIWebView:webView];
+    self.webView = webView;
 }
 
 + (void)shareActionWithWebView:(id)webView {
     [self shareActionWithUIWebView:webView];
+}
+
++ (YZNotice*)yz_noticeFromYouzanWithUrl:(NSURL*)URL {
+    YZNotice *yzNotice = [self yz_noticeFromYouzanWithUrl:URL];
+    NSString *url = URL.absoluteString;
+    if ([url containsString:@"alipay://"]) {
+        id webView = self.webView;
+        if ([webView isKindOfClass:[WKWebView class]]) {
+            url = [url stringByRemovingPercentEncoding];
+            NSInteger subIndex = 23;
+            NSString* dataStr=[url substringFromIndex:subIndex];
+            NSString *encodeString = (NSString *) CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault, (CFStringRef)dataStr, NULL, (CFStringRef)@"!*'();:@&=+$,/?%#[]", kCFStringEncodingUTF8));
+            NSMutableString* mString = [[NSMutableString alloc] init];
+            [mString appendString:[url substringToIndex:subIndex]];
+            [mString appendString:encodeString];
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:mString]];
+            yzNotice.notice = IsYouzanNotice;
+        }
+    }
+    return yzNotice;
 }
 
 @end

@@ -150,7 +150,6 @@ typedef AYWKWebView YZWebView;
 }
 - (BOOL)continueWithRequest:(NSURLRequest *)request {
     NSURL *url = [request URL];
-    NSLog(@"__url: %@",url.absoluteString);
     YZNotice *noticeFromYZ = [YZSDK noticeFromYouzanWithUrl:url];
     if(noticeFromYZ.notice & YouzanNoticeLogin) {//登录
         [self presentNativeLoginViewWithBlock:^(BOOL success){
@@ -200,6 +199,7 @@ typedef AYWKWebView YZWebView;
     BOOL b = [self continueWithRequest:request];
     return b;
 }
+
 
 @end
 
